@@ -1,0 +1,338 @@
+
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #ffffff; 
+  }
+  
+
+  /* Slider */
+.slider {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    animation: slide 9s infinite;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .palabra-destacada {
+    color: #080707;
+  }
+  
+  /* Animación automática */
+  @keyframes slide {
+    0%, 33% { margin-left: 0; }
+    33.33%, 66% { margin-left: -100%; }
+    66.66%, 100% { margin-left: -200%; }
+  }
+  
+  /* Botones automáticos de navegación (invisibles, pero necesarios para el control del slider) */
+  input[type="radio"] {
+    display: none;
+  }
+
+
+
+/*CSS Quienes somos y marcas*/
+  .main {
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    padding: 10%;
+
+}
+
+#titulo {
+    font-size: 50px;
+    text-align: center;
+    color:#92394B;
+}
+
+
+.boton {
+    padding: 15px 20px; 
+    font-size: 16px; 
+    color: black; 
+    background-color: white;
+    border: 2px solid black; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    
+    align-self: center;
+    margin-left: 30%;
+}
+
+.boton:hover {
+    background-color: black; 
+    color: white;
+}
+
+.quienes-somos {
+    display: flex; 
+    gap: 40px; 
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.quienes-somos img {
+    width: 600px;
+    height: 300px;
+}
+
+/*--------------------SERVICIOS Y ÉTICA-------------------------*/
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+}
+
+.seccion-izquierda {
+    flex: 1;
+    max-width: 40%;
+    padding: 20px;
+}
+
+.seccion-izquierda h1 {
+    font-size: 2.5rem;
+    color: #4b4b4b;
+    margin-bottom: 20px;
+}
+
+.seccion-izquierda p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #6c6c6c;
+}
+
+.seccion-derecha {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    position: relative;
+    width: 30%;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contenido-tarjeta {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 223, 173, 0.9);
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.contenido-tarjeta h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #4b4b4b;
+}
+
+.boton-conocer {
+    padding: 15px 20px; 
+    font-size: 16px; 
+    color: black; 
+    background-color: white;
+    border: 2px solid black; 
+    border-radius: 50px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+}
+
+.boton-conocer:hover {
+    background-color: black; 
+    color: white;
+}
+
+.etica-cumplimiento{
+    display: flex; 
+    gap: 40px; 
+    font-size: 43px;
+}
+
+.etica-cumplimiento img{
+    width: 55%;
+    height: 60%;
+}
+
+/* -------------------------- NUESTRAS MARCAS -------------- */ 
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    max-width: 25%;
+    background-color: #ccc;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-logo {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+
+/*-----------------------------QUIENES SOMOS--------------------*/
+
+/* Sección principal */
+.quienes-somos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Imagen a la izquierda */
+.imagen-lado {
+    flex: 1;
+    max-width: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.imagen-lado img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Texto a la derecha */
+.texto-lado {
+    flex: 1;
+    max-width: 50%;
+}
+
+.texto-lado h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.texto-lado h1 .fartucar-t {
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.texto-lado p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.imagen-fondoindex {
+    width: 100vw; 
+    margin: 0; 
+    overflow: hidden; 
+  }
+  
+  .imagen-fondoindex img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+  }

@@ -1,0 +1,118 @@
+/**CSS Footer*/
+body{
+    margin:0;
+    font-family: Arial;
+
+}
+
+footer {
+    background-color: #E4B572;
+    color: rgb(0, 0, 0);
+    padding: 20px 10px;
+    border-top: 1px solid #000000;
+}
+
+.contenedor-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logotipo */
+.footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-logo p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Redes Sociales */
+.footer-socials {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.footer-socials img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.footer-socials img:hover {
+    opacity: 0.8;
+}
+
+/* Secciones del Footer */
+.footer-sections {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+
+.contact {
+    text-align: left; 
+}
+
+.footer-section:nth-child(2) {
+    text-align: center; 
+}
+
+.footer-section:nth-child(3) {
+    text-align: right; 
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: #030303;
+}
+
+.footer-section p,
+.footer-section li {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Contacto con Iconos */
+.contact p {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    margin-bottom: 8px;
+}
+
+.contact .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+

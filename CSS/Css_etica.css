@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+  }
+  
+  
+  /* ------------- PRIMERA PARTE ------------------*/
+  .contenedor {
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+    background-color: #E4B572;
+  }
+  
+  .texto {
+    flex: 1; 
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+  }
+
+ .columna-titulo{
+    display: flex;
+    justify-content: center; 
+    align-items: left; 
+    flex-direction: column;
+    font-size: 30px;
+  
+ }
+  
+  .texto p {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  h1{
+
+    font-size: 50px;
+    text-transform: uppercase;
+
+  }
+  
+  .imagen {
+    flex: 1; 
+    background: url('../IMG/fondoetica.png') no-repeat center center;
+    background-size:auto;
+  }
+
+
+  /* --------------------------- SEGUNDA PARTE ------------------------ */
+  
+.container {
+    display: flex;
+    height: 100vh;
+    background-image: url('../IMG/pizza.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .left-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .large-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; 
+  }
+  
+  .right-box {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-content: center;
+    padding: 20px;
+  }
+  
+  .small-box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

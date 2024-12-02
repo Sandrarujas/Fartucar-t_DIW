@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+
+    <link rel="stylesheet" href="../CSS/Css_footer.css">
+    <link rel="stylesheet" href="../CSS/Css_nav.css">
+    <link rel="stylesheet" href="../CSS/Css_formulario.css">
+
+</head>
+    <body>
+      <nav class="navegacion">
+        <div class="logo">
+          <img src="../IMG/logo_sinfondo.png" alt="Logo" class="logo-img">
+        </div>
+        <ul class="navegacion-links">
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="nosotros.html">SOBRE NOSOTROS</a></li>
+          <li><a href="marcas.html">NUESTRAS MARCAS</a></li>
+          <li><a href="servicios.html">NUESTROS SERVICIOS</a></li>
+          <li><a href="etica.html">ÉTICA Y CUMPLIMIENTO</a></li>
+          <li><a href="formulario.html">CONTACTO</a></li>
+        </ul>
+        <div class="redes-sociales">
+          <a href="#"><img src="../IMG/facebook_logo.png"></a>
+          <a href="#"><img src="../IMG/instagram_logo.png"></a>
+          <a href="#"><img src="../IMG/tripadvisor_logo.png"></a>
+        </div>
+      </nav>
+ 
+   
+<section class="contact-section">
+  <div class="contact-info">
+    <h3>En fartucar-t...</h3>
+    <h4>Nos interesa estar comunicados.</h4>
+      <label for="area">¿Con qué área o restaurante te gustaría contactar?</label>
+        <select id="area" name="area">
+          <option value="">Selecciona un área...</option>
+          <option value="restaurante1">El Yantar</option>
+          <option value="restaurante1">La cocina mejicana</option>
+          <option value="restaurante1">Sabores</option>
+          <option value="restaurante2">Asturan</option>
+          <option value="soporte">Soporte</option>
+          <option value="soporte">Atención al cliente</option>
+    </select>
+  </div>
+  <div class="contact-form">
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Nombre: *</label>
+        <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email: *</label>
+        <input type="email" id="email" name="email" placeholder="fartucarte@gmail.com" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Teléfono: *</label>
+        <input type="tel" id="phone" name="phone" placeholder="333-222-444" required>
+      </div>
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos..."></textarea>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<section class="imagen-fondomapa"><img src="../IMG/mapa.png"></section>
+
+<footer>
+    <div class="contenedor-footer">
+        <div class="footer-socials">
+            <img src="../IMG/facebook_logo.png" >
+            <img src="../IMG/instagram_logo.png" >
+            <img src="../IMG/tripadvisor_logo.png" >
+        </div>
+        <div class="footer-sections">
+            <div class="footer-section contact">
+                <h3>Contacto</h3>
+                <p><img class="icon" src="../IMG/ubicacionn.png" > Avenida Constitución, 2.Bajo. Langreo</p>
+                <p><img class="icon" src="../IMG/email.png" > Enviar email</p>
+                <p><img class="icon" src="../IMG/telefono.png" >987-333-444</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces Destacados</h3>
+                <ul>
+                    <li>Fartucar-t gana el premio Código Ético 2024.</li>
+                    <li>¡El Yantar galardonado por tener el mejor cachopo!</li>
+                    <li>Sabores nos cuenta diez tips para optimizar la compra</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Textos Legales</h3>
+                <ul>
+                    <li>Aviso legal</li>
+                    <li>Política de cookies</li>
+                    <li>Política de privacidad</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+
+}
+
+/* --------------------------- NUESTROS SERVICIOS --------------------*/
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    width: 100%;
+    max-width: 1200px; 
+    box-sizing: border-box;
+    margin-top: 40px;
+    margin-left: 70px;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 100%; 
+    box-sizing: border-box;
+}
+
+.columna.titulo-columna {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.texto {
+    font-size: 1rem;
+    text-align: left;
+    color: #555;
+    line-height: 1.6; 
+}
+
+.imagen {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.boton {
+    padding: 20px;
+    background-color: #f6b476;
+    color: white;
+    font-size: 18px;
+    border:  none;
+    cursor: pointer;
+    margin-top: 10px;
+   
+}
+
+.boton:hover {
+    background-color: black;
+}
+
+
+
+
+/* --------------------- OPINIONES ---------------------------------*/
+
+
+/* Imagen de fondo con recuadros */
+.imagen-fondo {
+    width: 100%;
+    height: 300px;
+    background-image: url('../IMG/opiniones.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin-top: 50px; 
+        }
+
+/* Recuadros blancos dentro de la imagen */
+.recuadro {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden; 
+    max-width: 300px; 
+    box-sizing: border-box;
+        }
+
+/* Posicionamiento de los recuadros */
+.recuadro1 {
+    top: 50px;
+    left: 10%;
+ }
+
+.recuadro2 {
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+
+.recuadro3 {
+    top: 50px;
+    right: 10%;
+}
+
+      

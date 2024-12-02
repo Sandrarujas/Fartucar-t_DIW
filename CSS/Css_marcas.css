@@ -1,0 +1,125 @@
+body {
+ 
+  font-family: Arial, sans-serif;
+  background-color: white;
+
+}
+
+/* ------------- PRIMERA PARTE ------------------*/
+
+.titulo {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  background-color: #E4B572;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.contenedor {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.texto {
+  flex: 1; 
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+  align-items: center; 
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.texto p {
+  font-size: 20px;
+  text-align: left;
+}
+
+.texto h1 {
+  font-size: 36px;
+}
+
+.imagenservicios {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10%;
+
+}
+
+.imagenservicios img {
+  max-width: 100%; 
+  max-height: 100%; 
+  object-fit: contain; 
+}
+
+
+/* ----------------- NUESTRAS MARCAS ---------------------*/
+
+.marcas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.marca {
+  flex: 1;
+  min-width: 200px;
+  max-width: 25%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marca:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.texto {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  background-color: white;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #333;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .marca {
+      max-width: 100%;
+  }
+}
